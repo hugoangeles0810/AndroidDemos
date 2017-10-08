@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.hugoangeles0810.menuanimation.MainActivity"
+    >
+
+  <!-- Menu Container -->
+  <FrameLayout
+      android:id="@+id/menu_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorPrimary"
+      />
+  <!--/ Menu Container -->
+
+  <!-- Home Container -->
+  <android.support.constraint.ConstraintLayout
+      android:id="@+id/home_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorAccent"
+      >
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="X"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+  </android.support.constraint.ConstraintLayout>
+  <!--/ Home Container -->
+
+</FrameLayout>
